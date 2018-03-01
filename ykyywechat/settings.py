@@ -25,7 +25,7 @@ SECRET_KEY = '#m^73o$fu3ohs6gmlm899+b*i_rfq-shj1md^1g6dv2dh6shbl'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.lvweicong.ink']
 
 
 # Application definition
