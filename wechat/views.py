@@ -12,6 +12,7 @@ from django.http import HttpResponse
 def weixin_main(request):
     if request.method == "GET":
         #接收微信服务器get请求发过来的参数
+        print('GET method')
         signature = request.GET.get('signature', None)
         timestamp = request.GET.get('timestamp', None)
         nonce = request.GET.get('nonce', None)
