@@ -40,6 +40,7 @@ def autoreply(request):
         webData = request.body
         xmlData = ET.fromstring(webData)
 
+        print('getpostbody...')
         msg_type = xmlData.find('MsgType').text
         ToUserName = xmlData.find('ToUserName').text
         FromUserName = xmlData.find('FromUserName').text
