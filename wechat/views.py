@@ -10,7 +10,7 @@ token = 'lvweicong'
 appid = 'wxa9f31456735f1a20'
 appsecret = '9daf2d48f10289e79e580eaf066264a0'
 
-#django默认开启csrf防护，这里使用@csrf_exempt去掉防护
+#django默认开启csrf防护，这里使用@csrf_exempt去掉防hu
 @csrf_exempt
 def weixin_main(request):
     wechat = WechatBasic(token = token,
