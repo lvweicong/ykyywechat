@@ -20,6 +20,7 @@ def weixin_main(request):
     signature = request.GET.get('signature', None)
     timestamp = request.GET.get('timestamp', None)
     nonce = request.GET.get('nonce', None)
+    body_text = request.body
     #echostr = request.GET.get('echostr', None)
     if wechat.check_signature(signature=signature, timestamp=timestamp, nonce=nonce):
         wechat.parse_data(body_text)
